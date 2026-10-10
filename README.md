@@ -18,7 +18,7 @@ RegressLy is a powerful and user-friendly regression analysis application design
 ## 📥 Installation
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/RegressLy.git
+   git clone https://github.com/jeanemmanuelk/RegressLy.git
    cd RegressLy
    ```
 
