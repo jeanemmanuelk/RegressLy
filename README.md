@@ -44,6 +44,12 @@ RegressLy is a powerful and user-friendly regression analysis application design
 - **Root Mean Squared Error (RMSE)**
 - **R² Score**
 
+## ⚠️ Known Limitations
+- All columns, including the target, are standardized before the train/test split, so the scaler sees the test rows (data leakage) and the reported MAE, MSE and RMSE are in standardized units, not the original units of the target.
+- Categorical columns are label encoded, which implies an order that may not exist.
+- Outlier removal drops any row with a z-score above 3 in any numeric column, which can remove a lot of data on small datasets.
+- Models use default settings and a single 80/20 split.
+
 ## 🔮 Future Enhancements
 - Integration of Polynomial and Logistic Regression models.
 - Customizable reporting and result exports.
